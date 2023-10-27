@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/corvus_flashlmdd.mk
+    $(LOCAL_DIR)/lineage_alphalm.mk
 
 COMMON_LUNCH_CHOICES := \
-    corvus_flashlmdd-user \
-    corvus_flashlmdd-userdebug \
-    corvus_flashlmdd-eng
+    lineage_alphalm-user \
+    lineage_alphalm-userdebug \
+    lineage_alphalm-eng
