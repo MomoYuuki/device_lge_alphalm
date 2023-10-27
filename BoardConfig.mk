@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/flashlmdd
+DEVICE_PATH := device/lge/alphalm
 
-# inherit from common v50
--include device/lge/flash-common/BoardConfigCommon.mk
+# inherit from common g8
+-include device/lge/alpha-common/BoardConfigCommon.mk
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.hardware=flashlmdd
+BOARD_KERNEL_CMDLINE += androidboot.hardware=alphalm
 
 # Recovery
 TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
@@ -29,4 +29,4 @@ TARGET_RECOVERY_WIPE := $(DEVICE_PATH)/recovery/recovery.wipe
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # inherit from the proprietary version
--include vendor/lge/flashlmdd/BoardConfigVendor.mk
+-include vendor/lge/alphalm/BoardConfigVendor.mk
