@@ -20,16 +20,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-# Inherit from flashlmdd device
+# Inherit from alphalm device
 $(call inherit-product, device/lge/alphalm/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Miku stuff.
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Device identifiers
-PRODUCT_NAME := lineage_alphalm
+PRODUCT_NAME := miku_alphalm
 PRODUCT_DEVICE := alphalm
 PRODUCT_BRAND := lge
 PRODUCT_MANUFACTURER := LGE
@@ -40,3 +40,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-lge
 
 TARGET_VENDOR_PRODUCT_NAME := alphalm_lao_com
 TARGET_VENDOR_DEVICE_NAME := alphalm
+
+MIKU_MASTER := MomoYuuki
