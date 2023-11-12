@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/lineage_alphalm.mk
+    $(LOCAL_DIR)/miku_alphalm.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_alphalm-user \
-    lineage_alphalm-userdebug \
-    lineage_alphalm-eng
+    miku_alphalm-user \
+    miku_alphalm-userdebug \
+    miku_alphalm-eng
